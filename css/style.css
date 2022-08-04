@@ -145,7 +145,7 @@ strong{
     font-family: 'Pinyon Script', cursive;
 }
 /*end of home and nav.....*/
-button{
+.button{
     padding:1em 2em;
     background-color: var(--dark-color);
     color: var(--light-color);
@@ -157,17 +157,17 @@ button{
     box-shadow: 3px 3px 3px #222121;
 }
 /*segments */
-/*
+
 .segment, .seg_content_wrap{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
 }
-*/
+
 .seg_content_wrap{
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(autofit, 1fr, minmax(150px, 250px));
 }
 .content_card_wrap{
@@ -182,23 +182,44 @@ button{
     text-align:center;
     line-height: 1.6;
     color:var(--dark-color);
-
 }
-#project-tile, .card {
+#projects-title{
+    text-transform:uppercase;
+    letter-spacing: 7px;
+    font-size: var(--fs-large);
+}
+#project-tile-wrap{
+    display:flex;
+    flex-direction: row;
+    padding:5%;
+}
+.project-tile, .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:200px;
-    height:200px;
+    /*width:200px;
+    height:200px;*/
     border-radius: 5px;
     box-shadow:5px 3px 3px rgb(172, 170, 170);
     background-color: #fff;
     margin:20px;
     padding: 1em;
 }
-.card_img>i {
-    width:140px;
+.tile-head{
+    font-variant: small-caps;
+}
+.card_img>img {
+    width:300px;
+}
+.skill_btn_wrap > button{
+    padding:0.3rem 1rem;
+    background: var(--accent-color);
+    font-size: var(--fs-small);
+    color:var(--light-color);
+    margin-right: 0.3rem;
+    border-radius: 7px;
+    font-variant: small-caps;
 }
 #contact{
     background-image: url(../images/undraw_Social_ideas_re_j5v4.png);

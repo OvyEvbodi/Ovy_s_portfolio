@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ovy's portfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/40485fe37e.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Pinyon+Script&family=Roboto&family=Source+Serif+4:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header id=header>
+            <p id="logo"><strong id="v">V</strong>-tech</p>
+            <nav id="navbar">
+                <a href="#welcome-section">home</a>
+                <a href="#services">services</a>
+                <a href="#projects">projects</a>
+                <a href="#contact">contact</a>
+            </nav>
+            <div id="nav_mobile">
+                <nav id="nav_mob_cont">
+                    <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#welcome-section">home</a>
+                    <a href="#services">services</a>
+                    <a href="#projects">projects</a>
+                    <a href="#contact">contact</a>
+                </nav>
+            </div>
+            <div id="open" onclick="openNav()"></div>
+        </header>
+        <main>
+<!--welcome-->
+            <div id="welcome-section" class="segment">
+                <div class="title_wrap">
+                    <h1 class="title">welcome to my space</h1>
+                    <h2 > i'm <strong>ovy</strong></h2>
+                    <h3 class="sub-title">a front-end web developer</h3>
+                    <button>take a tour</button>
+                </div>
+            </div>
+            </main>
+
+<!--services-->        
+            <div id="services" class="segment">
+                <div class="seg_tit_wrap">
+                    <h2 class="segment_title"> My services</h2>
+                    <p>I am here to ensure you never miss any client or gig because of website issues or simply 
+                        because people didn't even know your business or service existed. I have a solid tech
+                        background so why don't you just relax and watch me sky rocket your business from zero to hero.
+                    </p>
+                    
+                </div>
+                <div class="seg_content_wrap">
+                    <h3>take a look at my skills and services</h3>
+                    <div class="content_card_wrap">
+                        <div class="card">
+                            <div class="card_head">
+                                <h4>html5</h4>
+                            </div>
+                            <div class="card_img">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="card_body">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_head">
+                                <h4>css3</h4>
+                            </div>
+                            <div class="card_img">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="card_body">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_head">
+                                <h4>javascript6</h4>
+                            </div>
+                            <div class="card_img">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div class="card_body">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_head">
+                                <h4>python3</h4>
+                            </div>
+                            <div class="card_img">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="card_body">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+<!--work-->            
+           <div id="projects" class="segment">
+                <h2 id="projects-title"> projects</h2>
+                <div id="project-tile">
+                    <p>check out my work by clicking the link below </p>
+                    <img src="image" alt="">
+                    <a href="https://spaces.w3schools.com/space/ovyevbodi"> my web space</a>
+                </div>
+            </div>
+<!--contact-->          
+           <div id="contact">
+               <div>
+                   <p>how do you hang out online?</p>
+               </div>
+               <div>
+
+               </div>
+
+              <p>check out more of my work on <a id="profile-link" href="https://github.com/OvyEvbodi" target="blank">my github page</a></p>
+              <form>
+                  <div class="input_unit">
+                    <label for="email"></label>
+                    <input type="email" name="email" placeholder="reach out to me">
+                  </div>
+                  <div class="input_unit">
+                    <label for="msg"></label> 
+                    <input type="text"  placeholder="your message">
+                  </div>
+                  <div class="input_unit">
+                    <label for="send"></label>
+                    <input type="submit" name="send" value="send">
+                </div>
+              </form>
+              <p id="footer">&copy; ovyevbodi 2021</p>
+           </div>
+           <div id="overlay"></div>
+
+        </main>
+        <script type="text/javascript" src="js/javascript.js"></script>
+    </body>
+</html>

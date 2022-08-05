@@ -1,2 +1,2 @@
 # Ovy_s_portfolio
-A one on one experience with me.
+This is a personal website that showcases my work and skills.

@@ -5,9 +5,9 @@
     scroll-behavior: smooth;
 }
 :root{
-    --light-color: #f5f5e5;
+    --light-color: #f6f7f7;
     --dark-color:#2e2d29;
-    --accent-color: rgb(38, 58, 52);
+    --accent-color: #797664;
     --fw-bold:800;
     --fw-med:600;
     --fw-light:400;

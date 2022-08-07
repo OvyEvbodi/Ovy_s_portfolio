@@ -1,0 +1,96 @@
+main{
+    padding-top:10vh;
+
+}
+body{
+    background-color: rgb(223, 220, 220);
+}
+.project_header_wrap{
+    width:100vw;
+    background-image: url('../images/data_analysis_bg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height:30vh;
+}
+.project_header{
+    background-color: #79766491;
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-color);
+    font-variant: small-caps;
+    letter-spacing: 5px;
+}
+.data_projects_wrap{
+    padding:5% 10%;
+}
+.project_card{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    width:100%;
+    margin-top: 2rem;
+    box-shadow:5px 5px 10px rgb(33, 34, 34);
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 1rem;
+}
+.project_body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+.project_thumbnail{
+    width: 110px;
+    height:110px;
+    border: 5px solid var(--accent-color);
+    border-radius: 4px;
+    
+}
+.project_thumbnail > img {
+    width:100px;
+    height:100px;
+}
+.project_title{
+    padding:0.5rem 1rem;
+    background-color: var(--accent-color);
+    color:var(--light-color);
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+}
+.project_text{
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.project_text > button {
+    padding: 0.5rem 1rem;
+    width: max-content;
+    color: var(--light-color);
+    background-color:var(--accent-color);
+    outline:none;
+    border: none;
+    box-shadow:5px 5px 10px rgb(33, 34, 34);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.project_text > button > a{
+    text-decoration: none;
+    color: var(--light-color);
+    font-variant: small-caps;
+    font-weight:var(--fw-med);
+    font-size:1em;
+    letter-spacing: 2px;
+}
+.project_text > button:hover{
+    opacity: 0.8;
+    transition: all 300ms ease;
+}

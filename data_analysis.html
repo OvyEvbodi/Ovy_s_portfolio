@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ovy's Data projects</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/data.css">
+        <script src="https://kit.fontawesome.com/40485fe37e.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Pinyon+Script&family=Roboto&family=Source+Serif+4:wght@300&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header id=header>
+        <nav id="navbar">
+            <a href="index.html">home</a>
+            <a href="index.html#projects">projects</a>
+            <a href="index.html#certifications">certifications</a>
+            <a href="#contact">connect</a>
+        </nav>
+        <div id="nav_mobile">
+            <nav id="nav_mob_cont">
+                <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#welcome-section">home</a>
+                <a href="#services">services</a>
+                <a href="#projects">projects</a>
+                <a href="#contact">contact</a>
+            </nav>
+        </div>
+        <div id="open" onclick="openNav()"></div>
+    </header>
+    <main>
+        <div class="project_header_wrap">
+            <div class="project_header">
+                <div class="project_header_title">
+                    <h1>data analysis experience</h1>
+                </div>
+                <div class="project_header_description">
+                    <p>From working with python, to querying Apis, bla bla bla abeg.</p>
+                </div>
+            </div> 
+        </div>
+        <div class="data_projects_wrap">
+            <div class="project_card">
+                <div class="project_body">
+                    <div class="project_thumbnail">
+                        <img src="images/data1.svg" alt="thumbnail">
+                    </div>
+                    <div class="project_text">
+                        <div class="project_title">
+                            <h3>Investigation of a dataset</h3>
+                        </div>
+                        <p>
+                            The objective of this investigation was to determine what factors may be helpful in predicting whether or not a patient would miss their scheduled hospital appointment. For this investigation, I used a dataset from <a href="https://www.kaggle.com/datasets/joniarroba/noshowappointments">Kaggle</a> that collects information from over 100k medical appointments in Brazil. <br>
+                            I highlighted some of the possible factors that may determine whether or not a patient will show up for their appointment, and carried out exploratory data analysis on each highlighted variable to discover any correlations between that variable and the dependent variable - the "no-show" variable.
+                        </p>
+                        <span><a href="investigate_a_Dataset.html">Here's the full analysis</a></span>
+                        <button><a href="https://github.com/OvyEvbodi/investigate_a_Dataset.ipynb"> view source code</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="project_card">
+                <div class="project_body">
+                    <div class="project_thumbnail">
+                        <img src="images/data2.svg" alt="thumbnail">
+                    </div>
+                    <div class="project_text">
+                        <div class="project_title">
+                            <h3>Data wrangling</h3>
+                        </div>
+                        <p>For this project, I downloaded the 'weRateDogs' twitter archives, and programmatically downloaded the image predictions using the get method of the 'requests' library, and saved the file into another pandas DataFrame.
+                            <br> I queried the Twitter API to get the number of retweets and favourites for each tweet in the Twitter archives DataFrame using the Twitter id as the identifier, I then saved the results into a text file which I read into a third pandas DataFrame, and cleaned the datasets.<br>
+                            <span>view my <a href="wrangle_act.html">complete wrangling</a> here, or checkout this summarized <a href="wrangle_report.html" > wrangle report</a>. Alternatively, you can read this <a href="act_report.html">blog-style  post</a> about my insights. </span>
+                        </p>
+                        <button><a href="https://github.com/OvyEvbodi/Data-wrangling-project"> view source code</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="project_card">
+                <div class="project_body">
+                    <div class="project_thumbnail">
+                        <img src="images/data3.svg" alt="thumbnail">
+                    </div>
+                    <div class="project_text">
+                        <div class="project_title">
+                            <h3>data visualization</h3>
+                        </div>
+                        <p>In this project, I carried out an exploratory data analysis on a loan dataset from ProsperLoans that contains various variables related to their borrowers and the company's loan services. The dataset 
+                            was provied by <a href="https://s3.amazonaws.com/udacity-hosted-downloads/ud651/prosperLoanData.csv"> Udacity</a> and this helpful <a href="https://docs.google.com/spreadsheets/d/1gDyi_L4UvIrLTEC6Wri5nbaMmkGmLQBk-Yx3z0XDEtI/edit#gid=0"> data dictionary</a> sheds some light on the various variables.<br>
+                            From my analysis, I was able to visualize how factors like APR, loan amount, listing category and some other factors influence the outcome of a loan status.
+                        <span>Here's a <a href="data_visualization_slide.html">short slideshow</a> just incase you're in a rush.</span>
+                        </p>
+                        <span>Have you got some time?<a href="data_visualization_part1.html"> Take a look at the full project here </a></span>
+                        <button><a href="https://github.com/OvyEvbodi/Data-Visualization-Project"> view source code</a></button>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <aside>
+
+    </aside>
+    <footer>
+        <p id="footer">&copy; ovyevbodi 2021</p>
+    </footer>
+</body>
+</html>

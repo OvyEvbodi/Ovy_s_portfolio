@@ -22,6 +22,7 @@
 }
 body{
     background-color: var(--light-color);
+    line-height: 1.6;
 }
 #welcome-section{
     height:100vh;
@@ -205,6 +206,10 @@ strong{
     background-color: #fff;
     margin:20px;
     padding: 1em;
+}
+#project-tile-wrap >a {
+    text-decoration: none;
+    color:var(--dark-color);
 }
 .tile-head{
     font-variant: small-caps;

@@ -168,16 +168,19 @@ strong{
     justify-content: center;
     align-items: center;
 }
-#projects, #contact, #services{
+#projects, #contact, #certifications{
     min-height: 100vh;
     text-align:center;
     line-height: 1.6;
     color:var(--dark-color);
 }
-#projects-title{
+#projects-title, #cert_page_title{
     text-transform:uppercase;
     letter-spacing: 7px;
     font-size: var(--fs-large);
+}
+#cert_page_title{
+    padding-top:5%;
 }
 #project-tile-wrap{
     display:flex;
@@ -266,4 +269,35 @@ strong{
     #open, #nav_mobile{
         display:none;
     }
+}
+/*certificates*/
+#certifications_wrap{
+    width: 80vw;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem auto;
+    padding:var(--padding-light);
+}
+.certification_card{
+    padding: var(--padding-light);
+    box-shadow:var(--box-shadow-light);
+    margin: 0.5rem 1rem 0 0;
+    border-radius: 7px;
+    background-color:var(--accent-color);
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align: left;
+}
+.cert_title{
+    text-align: center;
+    color: var(--light-color);
+}
+.cert_img > img {
+    width: 400px;
 }

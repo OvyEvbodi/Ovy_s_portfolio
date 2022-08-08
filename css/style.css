@@ -178,6 +178,8 @@ strong{
     text-transform:uppercase;
     letter-spacing: 7px;
     font-size: var(--fs-large);
+    padding: var(--padding-light);
+    max-width: 80vw;
 }
 #cert_page_title{
     padding-top:5%;
@@ -185,7 +187,9 @@ strong{
 #project-tile-wrap{
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding:5%;
+    justify-content: space-evenly;
 }
 .project-tile, .card {
     display: flex;
@@ -197,7 +201,7 @@ strong{
     border-radius: 5px;
     box-shadow:5px 3px 3px rgb(172, 170, 170);
     background-color: #fff;
-    margin:20px;
+    margin:1.5rem;
     padding: 1em;
 }
 #project-tile-wrap >a {
@@ -276,14 +280,14 @@ strong{
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:space-evenly;
     margin: 2rem auto;
     padding:var(--padding-light);
 }
 .certification_card{
     padding: var(--padding-light);
     box-shadow:var(--box-shadow-light);
-    margin: 0.5rem 1rem 0 0;
+    margin: 2rem 2rem 0 0;
     border-radius: 7px;
     background-color:var(--accent-color);
     letter-spacing: 3px;
@@ -293,11 +297,12 @@ strong{
     justify-content:center;
     align-items:center;
     text-align: left;
+    max-width: 500px;
 }
 .cert_title{
     text-align: center;
     color: var(--light-color);
 }
 .cert_img > img {
-    width: 400px;
+    max-width: 400px;
 }

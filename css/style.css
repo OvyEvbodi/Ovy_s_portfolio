@@ -12,7 +12,7 @@
     --fw-med:600;
     --fw-light:400;
     --fs-small:1rem;
-    --fs-med:1.1rem;
+    --fs-med:1.2rem;
     --fs-large:2.5rem;
     --padding-light:1em;
     --padding-thick:3em;
@@ -161,20 +161,13 @@ strong{
     display:grid;
     grid-template-columns: repeat(autofit, 1fr, minmax(150px, 250px));
 }
-.content_card_wrap{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
 #projects, #contact, #certifications{
     min-height: 100vh;
     text-align:center;
     line-height: 1.6;
     color:var(--dark-color);
 }
-#projects-title, #cert_page_title{
+#projects-title, #cert_page_title, #about_page_title{
     text-transform:uppercase;
     letter-spacing: 7px;
     font-size: var(--fs-large);
@@ -305,4 +298,172 @@ strong{
 }
 .cert_img > img {
     max-width: 400px;
+}
+/*connect*/
+#connect{
+    margin: 0 auto;
+    letter-spacing: 2px;
+    min-height: 100vh;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows:1fr 3fr 1fr ;
+    grid-template-areas:
+    "connect_header_wrap connect_header_wrap"
+    "about_wrap services_wrap"
+    "about_wrap skills"
+}
+#services_wrap{
+    height: 100%;
+    grid-area: services_wrap;
+    padding: var(--padding-light);
+    background-image: url("../images/undraw_connected_world_wuay.svg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#service_head{
+    color: var(--dark-color);
+    text-align: center;
+    background: rgba(237, 236, 236, 0.635);
+    padding:1rem 2rem;
+}
+#service_description > span{
+    color:var(--accent-color);
+    font-size: var(--fs-med);
+    font-weight: var(--fw-bold);
+    text-transform: capitalize;
+}
+#connect_header_wrap{
+    height: 100%;
+    background-color:var(--dark-color);
+    grid-area: connect_header_wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about_page_title{
+    color: var(--light-color);
+}
+#about_wrap{
+    height: 100%;
+    grid-area: about_wrap;
+    padding: var(--padding-thick);
+    box-shadow: var(--box-shadow-light);
+}
+#about_title, #services_wrap > div > h4{
+    letter-spacing: 3px;
+    color: var(--dark-color);
+    font-variant: small-caps;
+    font-size: var(--fs-med);
+}
+#about_img_wrap{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 2rem;
+}
+#about_header_wrap{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#about_img_wrap > img{
+    max-width: 100%;
+}
+.info_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-color);
+    text-transform: capitalize;
+    letter-spacing: 2px ;
+}
+.info_container > i{
+    margin-right: 0.5rem;
+    color: var(--accent-color);
+}
+.info_container > p > a{
+    text-transform: none;
+    color: var(--dark-color);
+}
+.info_container > p > a:hover{
+    color: var(--accent-color);
+    transform: scale(1.1);
+    transition: all ease 300ms;
+}
+#skills{
+    height: 100%;
+    box-shadow: var(--box-shadow-light);
+    border-top: 2px solid var(--accent-color);
+    grid-area: skills;
+    text-align: center;
+    color: var(--dark-color);
+    font-variant: small-caps;
+    font-size: var(--fs-med);
+    letter-spacing: 3px;
+}
+.skill_container > i{
+    margin-right: 1rem;
+    color: var(--accent-color);
+    font-size: var(--fs-large);
+}
+form{
+    background-color: var(--dark-color);
+    width:max-content;
+    padding: 1.5rem;
+    color: var(--light-color);
+    border-radius: 7px;
+    box-shadow: var(--box-shadow-dark);
+}
+#form_title{
+    letter-spacing: 3px;
+    color: var(--light-color);
+    font-variant: small-caps;
+    font-size: var(--fs-med);
+    text-align: center;
+}
+.form_unit > input{
+    width: 100%;
+    padding: 0.7rem 1rem 0;
+    text-transform: capitalize;
+    background: none;
+    outline:none;
+    border: none;
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--accent-color);
+}
+#submit_btn{
+    background-color: var(--accent-color);
+    color:var(--dark-color);
+    font-variant: small-caps;
+    padding:0.6rem 2.5rem;
+    border:none;
+    outline:none;
+    font-size: var(--fs_med);
+    font-weight: 600;
+    border-radius:4px;
+    transition: all 300ms ease;
+}
+#submit_btn:hover{
+    background-color: var(--light-color);
+    color: var(--accent-color);
+    opacity: 0.6;
+}
+/*connect mobile queries*/
+@media (max-width: 600px){
+    #connect{
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "connect_header_wrap"
+        "about_wrap"
+        "services_wrap"
+        "skills"
+        ;
+    }
 }

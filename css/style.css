@@ -216,17 +216,6 @@ strong{
     border-radius: 7px;
     font-variant: small-caps;
 }
-#contact{
-    background-image: url(../images/undraw_Social_ideas_re_j5v4.png);
-    background-attachment: fixed;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center; 
-}
 #footer{
     background-color: var(--dark-color);
     color: var(--light-color);
@@ -395,7 +384,7 @@ strong{
 .info_container > p > a:hover{
     color: var(--accent-color);
     transform: scale(1.1);
-    transition: all ease 300ms;
+    transition: all 300ms ease;
 }
 #skills{
     height: 100%;
@@ -467,3 +456,40 @@ form{
         ;
     }
 }
+/*contact/footer*/
+#contact{
+    background-color: var(--dark-color);
+    color: var(--accent-color);
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    padding: var(--padding-thick) var(--padding-thick) 0 var(--padding-thick);
+}
+#contact > div > div > h3{
+    margin-bottom: 1rem;
+}
+#footer_skills > a > i{
+    margin-right: 1rem;
+    color: var(--accent-color);
+    font-size: var(--fs-large);
+    transition:all 300ms ease;
+}
+#footer_links_wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer_links_wrap > a {
+    color: var(--accent-color);
+    padding: 0.5rem;
+    transition:all 300ms ease;
+}
+#footer_links_wrap > a:hover, #footer_skills > a > i:hover{
+    color: var(--light-color);
+} 

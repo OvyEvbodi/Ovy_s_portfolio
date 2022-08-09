@@ -493,3 +493,6 @@ form{
 #footer_links_wrap > a:hover, #footer_skills > a > i:hover{
     color: var(--light-color);
 } 
+#copyright{
+    opacity:0.5;
+}

@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:url("../images/buttercream_rose_backround_img.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.overlay{
+    position: absolute;
+    height: 200vh;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left:0;
+    width:100%;
+    color: rgb(248, 248, 232);
+    background-color:rgba(145, 22, 22, 0.6);  
+}
+header{
+    text-align: center;
+    padding: 1rem;
+    font-family: roboto, san-serif;
+    margin: 2rem 0;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+    font-weight: 600;
+}
+#description{
+    font-size: 1.2rem;
+}
+#survey-form{
+    color: #ccc;
+    width:95%;
+    padding:2rem;
+    height: auto;
+    margin:0 auto;
+    font-size: 1.2rem;
+    background:linear-gradient(120deg, rgba(49, 19, 21, 0.863)20%, rgba(117, 29, 63, 0.774)60%, rgba(46, 6, 6, 0.829)80%);
+    border-radius: 5px;
+    text-align: left;
+    
+    letter-spacing:1px;
+    max-width: 768px;
+    z-index:30;
+}
+
+.question{
+    margin-bottom: 32px;
+
+
+}
+#name, #email, #number{
+    background:#ccc;
+    border:none;
+    border-radius: 5px;
+    width:100%;
+    height:auto;
+    padding:16px 0 1rem 2rem; 
+    color: rgba(51, 11, 34, 1);
+    border-bottom: 2px solid #ccc;
+    
+}
+.dropdown{
+    width:auto;
+    padding:5px 0 5px 1rem;
+    background-color: #ccc;
+
+}
+#text-area{
+    width:100%;
+    height: 4rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background:transparent;
+    padding-left:5%;
+    color: #ccc;
+
+}
+#submit{
+    
+    margin;
+    border:none;
+    border-radius: 5px;
+    background:#ccc;
+    width:100%;
+    height: auto;
+    padding:0.5rem;
+    font-size:1.5rem;
+    color: rgba(51, 11, 34, 1);
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: 200ms;
+}
+#submit:hover{
+    color: #ccc;
+    background:rgba(51, 11, 34, 1);
+    transform: scale(1.07);
+    border:2px solid #ccc;
+}
+@media (max-height: 900px){
+    .overlay{
+        height:140vh;  
+    }
+    #survey-form{
+        font-size: 16px;
+    }
+    .question{
+        margin-bottom: 7px;
+    }
+    #name, #email, #number{
+        padding:4px 7px;
+    }
+    header{
+        margin:0.5rem;
+    }
+}
+@media (max-width:1100px){
+    .overlay{
+        height: 110vh;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charst="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <title>Ovy's Cakes Survey Form</title>
+        <link rel="stylesheet" href="css/style.css">  
+    </head>
+    <body>
+        <div class="overlay">
+        <header>
+            <h1 id="title">Ovy's Cakes survey form</h1>
+            <p id="description"> We appreciate your patronage and we'd like you to help us serve you better. It'll only take a few minutes. </p>
+        </header>
+        
+        <main>
+            <form id="survey-form">
+                <div class="question">
+                    <label for="name">Name:</label>
+                    <input type="name" id="name" placeholder="What is your name?">
+                    <br>
+                </div>
+                <div class="question">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <br>
+                </div>
+                <div class="question">
+                    <label for="number">Age:</label>
+                    <input type="number" id="number" name="age" placeholder="Enter your age">
+                    <br>
+                </div>
+                <div class="question">
+                    <label for="satisfaction">On a scale of 1-10, how satisfied are you with your last order? (10 being very satisfied)</label>
+                    <br>0<input type="range" name="satisfaction" min="1" max="10" value="5">10
+                    <br>
+                </div>
+                <div class="question">
+                    <p>What category do you fall into?</p>
+                    <label for="customer_category"><input type="radio" name="customer_category" value="first timer" checked> first timer</label><br>
+                    <label for="customer_category"><input type="radio" name="customer_category" value="returning customer"> returning customer</label>
+                    <br>
+                </div>
+                <div class="question">
+                    <label for="branch">which of our branches are you filling this survey for?</label><br>
+                    <select class="dropdown" name="branch">
+                        <option disabled selected value>please select one</option>
+                        <option value="ksi">Kumasi</option>
+                        <option value="los">Lagos</option>
+                        <option value="acc">Accra</option>
+                        <option value="tnt">Toronto</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <p>What new item would you be excited to see on our menu? (tick as many options as apply)</p>
+                    <label for="new_menu"><input class="input_field" name="new_menu" type="checkbox" value="Cream-cheese frosting"> Cream-cheese frosting</label><br>
+                    <label for="new_menu"><input class="input_field" name="new_menu" type="checkbox" value="angel food cake"> Angel food cake</label><br>
+                    <label for="new_menu"><input class="input_field" name="new_menu" type="checkbox" value="creme-caramel pudding"> Creme-caramel pudding</label><br>
+                    <label for="new_menu"><input class="input_field" name="new_menu" type="checkbox" value="hazelnut filling" > Hazelnut filling</label><br>
+                    <label for="new_menu"><input class="input_field" name="new_menu" type="checkbox" value="sugar-free carrot cake"> Sugar-free carrot cake</label>
+                    <br>
+                </div>
+                <div class="question">
+                    <p>Great! 2 more questions and we're done.<br>Where did you first hear about us?</p>
+                    <label for="marketing"><input type="radio" name="marketing" value="mouth" checked> word of mouth</label><br>
+                    <label for="marketing"><input type="radio" name="marketing" value="ad"> social media ad</label><br>
+                    <label for="marketing"><input type="radio" name="marketing" value="flyer"> poster/flyer</label><br>
+                    <label for="marketing"><input type="radio" name="marketing" value="campus"> tech campus</label>
+                    <br>
+                </div>
+                    <div class="question">
+                    <p>do you get value for the price you pay our cakes?</p>
+                    <label for="pricing"><input type="radio" name="pricing" value="yes" checked> oh yes, i definately do! </label><br>
+                    <label for="pricing"><input type="radio" name="pricing" value="maybe"> kind of, not sure</label><br>
+                    <label for="pricing"><input type="radio" name="pricing" value="no"> not at all</label>
+                    <br>
+                </div>
+                <div class="question">
+                    <p>We'd love your ideas too. Is there anything you'll like us to improve on?</p>
+                    <input type="text" class="text_area" id="text-area" name="text-area" placeholder="Let us know here....">
+                    <br>
+                </div>
+                <button type="submit" id="submit">send</button>
+            </form>
+        </main>
+        </div>
+    </body>
+</html>

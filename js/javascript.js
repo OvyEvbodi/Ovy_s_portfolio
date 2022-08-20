@@ -1,9 +1,21 @@
-function openNav(){
-    document.getElementById("nav_mobile").style.width = "50%";
-    document.getElementById("open").style.opacity = "0";
-}
-function closeNav(){
+const mobileLink = document.querySelectorAll(".mob_nav_link");
+document.getElementById("open").addEventListener('click', function(){
+    document.getElementById("nav_mobile").style.width = "80%";
+    document.getElementById("close").style.display = "block";
+    document.getElementById("open").style.display = "none";
+})
+document.getElementById("close").addEventListener('click', function(){
     document.getElementById("nav_mobile").style.width = "0%";
-    document.getElementById("open").style.opacity = "1";
-}
-document.querySelectorAll('a').addEventListener('click', closeNav());
+    document.getElementById("close").style.display = "none";
+    document.getElementById("open").style.display = "block";
+
+})
+
+mobileLink.forEach(link =>{
+    link.addEventListener('click', () =>{
+        document.getElementById("nav_mobile").style.width = "0%";
+        document.getElementById("close").style.display = "none";
+        document.getElementById("open").style.display = "block";
+    })
+})
+//end of mobile nav commit.................................//

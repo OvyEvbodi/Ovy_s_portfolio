@@ -420,12 +420,14 @@ form{
 .form_unit > input{
     width: 100%;
     padding: 0.7rem 1rem 0;
-    text-transform: capitalize;
     background: none;
     outline:none;
     border: none;
     letter-spacing: 2px;
     border-bottom: 2px solid var(--accent-color);
+}
+.form_unit > label{
+text-transform: capitalize;
 }
 #submit_btn{
     background-color: var(--accent-color);

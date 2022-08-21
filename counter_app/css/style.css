@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+ 	margin: 0;
+ 	padding: 0;
+ }
+ body{
+     font-family: "Source Serif 4", sans-serif;
+     background-color: rgb(38, 40, 41);
+ }
+ .wrapper{
+    min-width:330px;
+    min-height: 500px;;
+    max-width: 600px;
+    max-height: 700px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%); 
+    background-color: rgb(255, 255, 255);
+    background-image:url(../images/undraw_select_re_3kbd.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid rgba(70, 173, 199, 1);
+    box-shadow: 5px 5px 10px rgb(26, 64, 73);
+    border-radius: 10px;
+
+ }
+ .center{
+    background-color: rgba(70, 173, 199, 0.5);
+    width:300px;
+    height: 400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    border-radius: 10px;
+ }
+ .text_wrap{
+    position:relative;
+    top:-40px;
+    text-align:center;
+    font-variant: small-caps;
+    
+ }
+ h1{
+    text-transform: uppercase;
+    color: rgb(13, 13, 14);
+ }
+ #count{
+     font-size: 2.5em;
+     font-weight: 800;
+     position: relative;
+     top: -15px;
+ }
+ .btn{
+    width: 120px;
+    padding: 0.5em;
+    box-shadow:5px 5px 10px rgb(33, 34, 34);
+    border-radius: 5px;
+    color: #ccc;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: 200ms;
+    cursor: pointer;
+ }
+ .btn:active, .btn:hover{
+     opacity: 0.9;
+ }
+ #increment{
+    background-color:rgb(129, 16, 16);
+ }
+ #save{
+    background-color: rgb(23, 88, 23);
+ }
+ #prev_count{
+     position: relative;
+     top:40px;
+     
+ }

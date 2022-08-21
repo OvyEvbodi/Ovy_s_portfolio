@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 245);
+}
+.container{
+    display:flex;
+    justify-content: center;
+    box-shadow: 3px 7px 3px slategray;
+    width:90%;
+    max-width: 700px;
+    min-height:90vh;
+    
+    margin-top: 32px;
+    border-radius: 5px;
+    background-image: url("../images/undraw_task_list_6x9d\ copy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.to-do{
+    margin: 20px auto;
+    width: 95%;
+    margin-top: 32px;
+    background-color:rgba(35, 54, 50, 0.623);
+    text-align:center;
+    
+}
+#input{
+    width:60%;
+    padding:0.3em 0;
+    text-align: center;
+    font-size:1.1em;
+    color:rgb(161, 75, 18);
+    border-radius: 4px;
+    outline: none;
+    border:none;
+}
+button{
+    padding:0.2em;
+    font-size: 1.3em;
+    border:1px solid rgb(27, 54, 14);
+    background-color: rgb(245, 242, 231);
+    font-weight: 800;
+    font-variant: small-caps;
+    margin:16px 0;
+    border-radius: 4px;
+}
+#add{
+    color:rgb(34, 70, 40);
+}
+#del{
+    color:rgb(124, 44, 24);
+}
+h1{
+    color: rgb(56, 24, 6);
+    margin: 7px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    font-size: 1.2em;
+    color:rgb(253, 237, 196);
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    text-transform: capitalize;
+    border-bottom:1px solid rgb(216, 206, 200);
+}

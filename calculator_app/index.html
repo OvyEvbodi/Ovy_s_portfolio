@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ovy's calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="content_wrap">
+            <input id="input_el" name="input value" placeholder="0">
+            <br>
+            <button onclick="press(1)" class="key">1</button>
+            <button onclick="press(2)" class="key">2</button>
+            <button onclick="press(3)" class="key">3</button>
+            <button onclick="press('+')" class="key operator">+</button>
+            <br>
+            <button onclick="press(4)" class="key">4</button>
+            <button onclick="press(5)" class="key">5</button>
+            <button onclick="press(6)" class="key">6</button>
+            <button onclick="press('-')" class="key operator">-</button>
+            <br>
+            <button onclick="press(7)" class="key">7</button>
+            <button onclick="press(8)" class="key">8</button>
+            <button onclick="press(9)" class="key">9</button>
+            <button onclick="press('*')" class="key operator">*</button>
+            <br>
+            <button onclick="press('.')" class="key">.</button>
+            <button onclick="press(0)" class="key">0</button>
+            <button onclick="clean()" class=" key" id="clear_btn">c</button>
+            <button onclick="press('/')" class="key operator">/</button>
+            <br>
+            <button onclick="equal()" class="key" id="equal_btn">=</button>
+        </div>
+        <div id="storage">
+            <p onclick="storage()"><b>previous calculations:</b></p>
+        </div>
+    </div>
+    
+<script rel="text/javascript" src="js/script.js"></script> 
+</body>
+</html>

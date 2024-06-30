@@ -107,3 +107,20 @@ body{
         padding-left: 0;
     }
 }
+
+/* For blogs */
+.blog_body {
+    max-width: 90vw;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    text-align: left;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+@media (min-width: 724px) {
+    .blog_body {
+        max-width: 60vw;
+        padding: 3rem 1rem;
+    }
+}
